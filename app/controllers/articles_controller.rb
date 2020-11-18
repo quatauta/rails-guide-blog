@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
   helper_method :articles, :article
 
   def index
+    self.articles = Article.all
   end
 
   def show

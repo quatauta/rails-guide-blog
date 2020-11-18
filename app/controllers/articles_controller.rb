@@ -1,12 +1,31 @@
 class ArticlesController < ApplicationController
+  attr_accessor :articles, :article
+  helper_method :articles, :article
+
+  def index
+  end
+
+  def show
+    self.article = Article.find(params[:id])
+  end
+
   def new
   end
 
-  def create
-    @article = Article.new(article_params)
+  def edit
+  end
 
-    @article.save
-    redirect_to @article
+  def create
+    self.article = Article.new(article_params)
+
+    article.save
+    redirect_to article
+  end
+
+  def update
+  end
+
+  def destroy
   end
 
   private

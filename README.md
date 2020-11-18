@@ -1,5 +1,7 @@
 # README
 
+Current step in the Rails Guide: https://guides.rubyonrails.org/getting_started.html#adding-some-validation
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

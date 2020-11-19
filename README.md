@@ -2,7 +2,7 @@
 
 This a my approach to refresh my experience with [Ruby on Rails](https://rubyonrails.org/).
 
-* Current step in the Rails Guide: https://guides.rubyonrails.org/getting_started.html#updating-articles
+* Current step in the Rails Guide: https://guides.rubyonrails.org/getting_started.html#generating-a-model
 
 Contray to the typical way to pass data between controllers and views (directly using
 instance variables), I will use attribute accessor methods defined in the controller to

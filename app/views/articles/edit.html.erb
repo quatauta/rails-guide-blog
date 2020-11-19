@@ -2,4 +2,6 @@
 
 <%= render 'form' %>
 
+<%= link_to 'Show', article_path(article) %> |
+<%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %> |
 <%= link_to 'Back', articles_path %>

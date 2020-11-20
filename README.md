@@ -27,3 +27,5 @@ Getting Started with Ruby on Rails Guide), I may add Docker and GitLab CI/CD Aut
 * How to run the test suite:
 * Services (job queues, cache servers, search engines, etc.):
 * Deployment instructions:
+
+Once the status is kind-of-done, I will explore the [Gemfile of Basecamp's Hey Mail](https://gist.github.com/dhh/782fb925b57450da28c1e15656779556) and go to see what I can learn there.

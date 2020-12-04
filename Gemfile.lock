@@ -204,6 +204,8 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (1.2.8)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2020.4)
+      tzinfo (>= 1.0.0)
     unicode-display_width (1.7.0)
     web-console (4.1.0)
       actionview (>= 6.0.0)
@@ -230,25 +232,25 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootsnap (>= 1.4.2)
+  bootsnap (>= 1.5)
   byebug
-  capybara (>= 2.15)
+  capybara (>= 3.34)
   irb (>= 1.2)
-  jbuilder (>= 2.7)
-  listen (>= 3.2)
-  puma (>= 4.1)
-  rails (>= 6.0.3.4, >= 6.0.3)
+  jbuilder (>= 2.10)
+  listen (>= 3.3)
+  puma (>= 4.3)
+  rails (>= 6.0.3)
   sass-rails (>= 6)
   selenium-webdriver
   spring
-  spring-watcher-listen (>= 2.0.0)
+  spring-watcher-listen (>= 2.0)
   sqlite3 (>= 1.4)
-  standard (>= 0.9)
-  turbolinks (>= 5)
+  standard (>= 0.10)
+  turbolinks (>= 5.2)
   tzinfo-data
-  web-console (>= 3.3.0)
+  web-console (>= 4.1)
   webdrivers
-  webpacker (>= 4.0)
+  webpacker (>= 5.2)
 
 RUBY VERSION
    ruby 2.7.2p137

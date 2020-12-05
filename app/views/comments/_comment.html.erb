@@ -8,5 +8,9 @@
 </p>
 
 <p>
+  Created <%= I18n.l(comment.created_at, format: :short) %>, updated <%= I18n.l(comment.updated_at, format: :short) %>
+</p>
+
+<p>
   <%= link_to 'Destroy Comment', [comment.article, comment], method: :delete, data: { confirm: 'Are you sure?' } %>
 </p>

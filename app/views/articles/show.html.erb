@@ -8,6 +8,10 @@
   <%= article.text %>
 </p>
 
+<p>
+  Created <%= I18n.l(article.created_at, format: :short) %>, updated <%= I18n.l(article.updated_at, format: :short) %>
+</p>
+
 <h2>Comments</h2>
 <%= render article.comments %>
 

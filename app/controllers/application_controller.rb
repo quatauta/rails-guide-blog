@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   around_action :switch_locale
+  around_action :switch_timezone
 
   private
 
@@ -14,5 +15,13 @@ class ApplicationController < ActionController::Base
 
   def locale_from_headers
     request.env.fetch("rack.locale", nil)
+  end
+
+  def switch_timezone(&action)
+    Time.use_zone(timezone_from_cookies, &action)
+  end
+
+  def timezone_from_cookies
+    cookies.fetch(:timezone, nil)
   end
 end

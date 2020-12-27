@@ -34,8 +34,8 @@ group :development, :test do
   # Code crititcs
   gem "benchmark-ips", require: false
   gem "brakeman", ">= 4.0", require: false
-  gem "bundler-audit", ">= 0.4", github: "basecamp/bundler-audit", branch: "thor-bump", require: false
-  gem "rubocop", ">= 0.72", require: false
+  gem "bundler-audit", ">= 0.7", require: false
+  gem "rubocop", ">= 1.4", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
   gem "scss_lint", ">= 0.50", require: false

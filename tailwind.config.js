@@ -1,5 +1,9 @@
 module.exports = {
+  darkMode: 'media',
   future: {},
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
   purge: [
     './src/**/*.erb',
     './src/**/*.haml',
@@ -10,5 +14,4 @@ module.exports = {
   ],
   theme: {},
   variants: {},
-  plugins: [],
 }

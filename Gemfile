@@ -9,6 +9,7 @@ gem "rails", ">= 6.1"
 
 # gem "bcrypt", "~> 3.1.7" # Use Active Model has_secure_password
 gem "bootsnap", ">= 1.5", require: false # Reduces boot times through caching; required in config/boot.rb
+gem "honeybadger", ">= 4.0"
 gem "image_processing", ">= 1.2" # Use Active Storage variant
 gem "jbuilder", ">= 2.10" # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "puma", ">= 5.0" # Use Puma as the app server

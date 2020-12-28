@@ -91,6 +91,7 @@ GEM
     ffi (1.14.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    honeybadger (4.7.2)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.1)
@@ -261,6 +262,7 @@ DEPENDENCIES
   bundler-leak (>= 0.2)
   byebug
   capybara (>= 3.34)
+  honeybadger (>= 4.0)
   image_processing (>= 1.2)
   irb (>= 1.2)
   jbuilder (>= 2.10)

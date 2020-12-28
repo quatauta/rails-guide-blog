@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 class ArticlesController < ApplicationController
   attr_accessor :articles, :article
+
   helper_method :articles, :article
 
   def index

@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 class CommentsController < ApplicationController
   attr_accessor :article, :comment
+
   helper_method :article, :comment
 
   def index

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -22,10 +24,15 @@ group :development, :test do
   gem "benchmark-ips", require: false
   gem "brakeman", ">= 4.0", require: false
   gem "bundler-audit", ">= 0.7", require: false
-  gem "byebug", platforms: [:mri, :mingw, :x64_mingw] # Call "byebug" anywhere in the code to stop execution and get a debugger console
+  gem "bundler-leak", ">= 0.2", require: false
+  gem "byebug", platforms: %i[mri mingw x64_mingw] # Call "byebug" anywhere in the code to get a debugger console
+  gem "libyear-bundler", ">= 0.5", require: false
   gem "rubocop", ">= 1.4", require: false
   gem "rubocop-performance", require: false
-  gem "rubocop-rails", require: false
+  gem "rubocop-rails", ">= 2.9", require: false
+  gem "rubocop-rake", ">= 0.5", require: false
+  gem "rubocop-rspec", ">= 2.1", require: false
+  gem "standard", ">= 0.10", require: false
 end
 
 group :development do
@@ -33,8 +40,7 @@ group :development do
   gem "listen", ">= 3.3"
   gem "rack-mini-profiler", ">= 2.0"
   gem "spring" # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem "standard", ">= 0.10"
-  gem "web-console", ">= 4.1" # Access an interactive console on exception pages or by calling "console" anywhere in the code.
+  gem "web-console", ">= 4.1" # Access an interactive console on exception pages or by calling "console" in the code
 end
 
 group :test do

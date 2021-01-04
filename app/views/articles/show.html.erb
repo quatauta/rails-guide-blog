@@ -1,23 +1,20 @@
-<p>
-  <strong>Title:</strong>
-  <%= article.title %>
-</p>
+<h2><%= article.title %></h2>
+
+<p><%= article.text %></p>
 
 <p>
-  <strong>Text:</strong>
-  <%= article.text %>
+  Published <%= I18n.l(article.created_at, format: :short) %>
+  <% if article.created_at != article.updated_at %> (updated <%= I18n.l(article.updated_at, format: :short) %>)<% end %>
 </p>
 
-<p>
-  Created <%= I18n.l(article.created_at, format: :short) %>, updated <%= I18n.l(article.updated_at, format: :short) %>
-</p>
+<h3>Comments</h3>
+<ul>
+  <%= render article.comments %>
+</ul>
 
-<h2>Comments</h2>
-<%= render article.comments %>
-
-<h2>Add a comment:</h2>
+<p>Add a comment:</p>
 <%= render 'comments/form' %>
 
-<%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %> |
 <%= link_to 'Edit', edit_article_path(article) %> |
 <%= link_to 'Back', articles_path %>

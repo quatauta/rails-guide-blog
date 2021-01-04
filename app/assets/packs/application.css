@@ -1,3 +1,51 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    @apply pb-4;
+  }
+
+  h1 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+  
+  h2 {
+    @apply text-xl;
+    @apply font-bold;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+  
+  a {
+    @apply underline;
+    @apply text-blue-500;
+  }
+  
+  ol:not(.list-none),
+  ul:not(.list-none) {
+    @apply ml-1;
+    @apply list-outside;
+    padding-inline-start: 2rem;
+  }
+  
+  ul:not(.list-none) {
+    @apply list-disc;
+  }
+  
+  ol:not(.list-none) {
+    @apply list-decimal;
+  }
+}

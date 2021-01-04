@@ -1,16 +1,8 @@
-<p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
-<p>
-  <strong>Comment:</strong>
-  <%= comment.body %>
-</p>
-
-<p>
-  Created <%= I18n.l(comment.created_at, format: :short) %>, updated <%= I18n.l(comment.updated_at, format: :short) %>
-</p>
-
-<p>
-  <%= link_to 'Destroy Comment', [comment.article, comment], method: :delete, data: { confirm: 'Are you sure?' } %>
-</p>
+<li>
+  <%= comment.commenter %>:
+  <quote><%= comment.body %></quote>
+  <br>
+  <%= I18n.l(comment.created_at, format: :short) %> <% if comment.created_at != comment.updated_at %> (updated <%= I18n.l(comment.updated_at, format: :short)%>)<% end %>
+  <br>
+  <%= link_to 'Delete', [comment.article, comment], method: :delete, data: { confirm: 'Are you sure?' } %>
+</li>

@@ -1,25 +1,19 @@
-<h1>Listing Articles</h1>
+<h1>All Articles</h1>
 
-<%= link_to 'New article', new_article_path %>
+<p><%= link_to 'Create new article', new_article_path %></p>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th>Created</th>
-    <th>Modified</th>
-    <th></th>
-  </tr>
-
+<ul>
   <% articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><%= I18n.l(article.created_at, format: :short) %></td>
-      <td><%= I18n.l(article.updated_at, format: :short) %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
+    <li>
+      <p>
+        <%= link_to article.title, article_path(article) %>:
+        <%= truncate(article.text, length: 90, separator: /\W/) %>
+        <br>
+        <span class="text-gray-500">
+          Published <%= I18n.l(article.created_at, format: :short) %>
+          <% if article.created_at != article.updated_at %> (updated <%= I18n.l(article.updated_at, format: :short) %>)<% end %>
+        <span>
+      </p>
+    </li>
   <% end %>
-</table>
+</ul>

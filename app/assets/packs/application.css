@@ -3,6 +3,10 @@
 @import "tailwindcss/utilities";
 
 @layer base {
+  * {
+    @apply box-border;
+  }
+
   h1,
   h2,
   h3,
@@ -11,9 +15,10 @@
   h6,
   p,
   ol,
-  ul {
+  ul,
+  li {
     @apply pb-4;
-  }
+ }
 
   h1 {
     @apply text-2xl;

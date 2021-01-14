@@ -1,0 +1,7 @@
+---
+de:
+  time:
+    formats:
+      last_year: "%e. %b %Y"
+      this_year: "%e. %b"
+      today: "%H:%M"

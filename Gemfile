@@ -33,7 +33,7 @@ group :development, :test do
   gem "rubocop-rails", ">= 2.9", require: false
   gem "rubocop-rake", ">= 0.5", require: false
   gem "rubocop-rspec", ">= 2.1", require: false
-  gem "standard", ">= 0.10", require: false
+  gem "standard", ">= 0.13", require: false
 end
 
 group :development do

@@ -15,6 +15,6 @@
 <p>Add a comment:</p>
 <%= render 'comments/form' %>
 
-<%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %> |
-<%= link_to 'Edit', edit_article_path(article) %> |
+<%= link_to 'Delete', article, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Edit', [:edit, article] %> |
 <%= link_to 'Back', articles_path %>

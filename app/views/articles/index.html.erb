@@ -17,12 +17,12 @@ end
 <ul>
   <% articles.each do |article| %>
     <li>
-      <%= link_to(article_path(article), class: "flex no-underline") do %>
+      <%= link_to article, class: "flex no-underline" do %>
         <div class="w-full whitespace-nowrap overflow-hidden" style="min-width: 10ch;">
           <h3 class="overflow-hidden overflow-ellipsis p-0 text-black"><%= article.title %></h3>
           <p class="overflow-hidden overflow-ellipsis p-0 text-gray-500"><%= truncate(article.text, length: 150, separator: /\W/) %></p>
         </div>
-        <%= time_tag(article.created_at, format: relative_time_format(article.created_at), class: "flex self-center text-right whitespace-nowrap pl-1 text-gray-500") %>
+        <%= time_tag article.created_at, format: relative_time_format(article.created_at), class: "flex self-center text-right whitespace-nowrap pl-1 text-gray-500" %>
       <% end %>
     </li>
   <% end %>

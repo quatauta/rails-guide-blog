@@ -28,12 +28,12 @@ group :development, :test do
   gem "bundler-leak", ">= 0.2", require: false
   gem "byebug", platforms: %i[mri mingw x64_mingw] # Call "byebug" anywhere in the code to get a debugger console
   gem "libyear-bundler", ">= 0.5", require: false
-  gem "rubocop", ">= 1.4", require: false
+  gem "rubocop", ">= 1.11", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rails", ">= 2.9", require: false
   gem "rubocop-rake", ">= 0.5", require: false
   gem "rubocop-rspec", ">= 2.1", require: false
-  gem "standard", ">= 0.13", require: false
+  gem "standard", ">= 1.0.4", require: false
 end
 
 group :development do

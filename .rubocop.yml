@@ -28,6 +28,8 @@ Lint/HeredocMethodCallPosition:
 
 Lint/NumberConversion:
   Enabled: true
+  IgnoredMethods:
+    - hour
 
 Metrics/BlockLength:
   ExcludedMethods: ["describe", "context", "let"]

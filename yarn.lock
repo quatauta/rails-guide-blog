@@ -283,7 +283,7 @@
     "@babel/helper-create-class-features-plugin" "^7.13.0"
     "@babel/helper-plugin-utils" "^7.13.0"
 
-"@babel/plugin-proposal-class-static-block@^7.13.11":
+"@babel/plugin-proposal-class-static-block@^7.14.3":
   version "7.14.3"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-static-block/-/plugin-proposal-class-static-block-7.14.3.tgz#5a527e2cae4a4753119c3a3e7f64ecae8ccf1360"
   integrity sha512-HEjzp5q+lWSjAgJtSluFDrGGosmwTgKwCXdDQZvhKsRlwv3YdkUEqxNrrjesJd+B9E9zvr1PVPVBvhYZ9msjvQ==

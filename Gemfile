@@ -11,12 +11,14 @@ gem "honeybadger", ">= 4.0"
 # gem 'image_processing', '>= 1.2' # Use Active Storage variant
 gem 'jbuilder', '>= 2.7' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'puma', '>= 5.0' # Use Puma as the app server
+gem "rack-contrib", ">= 2.3" # rack middleware for locale based on HTTP_ACCEPT_LANGUAGE
+gem "rails-i18n", ">= 6.0" # localization data
 # gem 'redis', '>= 4.0' # Use Redis adapter to run Action Cable in production
 gem 'sass-rails', '>= 6' # Use SCSS for stylesheets
 gem 'sqlite3', '>= 1.4' # Use sqlite3 as the database for Active Record
 gem 'turbolinks', '>= 5' # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'webpacker', '>= 5.0' # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'tzinfo-data'
+gem 'webpacker', '>= 5.0' # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw] # Call 'byebug' anywhere in the code to stop execution and get a debugger console

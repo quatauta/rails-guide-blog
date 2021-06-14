@@ -16,6 +16,7 @@ gem 'sass-rails', '>= 6' # Use SCSS for stylesheets
 gem 'sqlite3', '>= 1.4' # Use sqlite3 as the database for Active Record
 gem 'turbolinks', '>= 5' # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'webpacker', '>= 5.0' # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+gem 'tzinfo-data'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw] # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -33,5 +34,3 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers' # Easy installation and use of web drivers to run system tests with browsers
 end
-
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby] # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

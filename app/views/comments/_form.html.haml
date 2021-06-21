@@ -1,0 +1,9 @@
+= form_with model: [ article, article.comments.build ], local: true do |form|
+  %p
+    = form.label :commenter
+    = form.text_field :commenter
+  %p
+    = form.label :body
+    = form.text_field :body
+  %p
+    = form.submit

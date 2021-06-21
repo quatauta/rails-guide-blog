@@ -1,0 +1,16 @@
+%h2= article.title
+%p= article.text
+%p
+  Published #{I18n.l(article.created_at, format: :short)}
+  - if article.created_at != article.updated_at
+    (updated #{I18n.l(article.updated_at, format: :short)})
+%h3 Comments
+%ul
+  = render article.comments
+%p Add a comment:
+= render 'comments/form'
+= link_to 'Delete', article, method: :delete, data: { confirm: 'Are you sure?' }
+|
+= link_to 'Edit', [:edit, article]
+|
+= link_to 'Back', articles_path
